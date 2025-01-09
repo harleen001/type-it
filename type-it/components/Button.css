@@ -1,17 +1,20 @@
+/* Button.css */
 .pushable {
   background: hsl(340deg 100% 32%);
-  border-radius: 12px;
+  border-radius: 10px;
   border: none;
   padding: 0;
   cursor: pointer;
+  margin-left: 5px;
   outline-offset: 4px;
 }
 
 .front {
   display: block;
-  padding: 12px 42px;
-  border-radius: 12px;
-  font-size: 1.25rem;
+  margin-left: 5px;
+  padding: 8px 24px;
+  border-radius: 10px;
+  font-size: 1rem;
   background: hsl(345deg 100% 47%);
   color: white;
   transform: translateY(-6px);

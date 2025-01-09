@@ -1,11 +1,16 @@
 "use client";
 
-import React from 'react';
-import './Button.css';  // Assuming you will create a separate CSS file
+import React from "react";
+import "./Button.css";
 
-const Button = ({ label = "Click Me", onClick }: { label?: string, onClick?: () => void }) => {
+type ButtonProps = {
+  label: string;
+  onClick: (label: string) => void; // Pass label to parent onClick handler
+};
+
+const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
   return (
-    <button className="pushable" onClick={onClick}>
+    <button className="pushable" onClick={() => onClick(label)}>
       <span className="front">{label}</span>
     </button>
   );
